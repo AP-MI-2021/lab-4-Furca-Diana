@@ -20,7 +20,7 @@ def nrpozitivelista(l):
 
 def nrpozcresc(l):
     """
-    Determina daca toate numerele pozitive dintr-o lista sunt in ordine crescatoare
+    Determina daca toate numerele pozitive dintr-o lista sunt in ordine crescatoare si pune pozitivele intr-o lista
     :param l: lista de numere naturale
     :return: True, daca numerele pozitive sunt in ordine crescatoare si False in caz contrar
     """
