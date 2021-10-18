@@ -97,8 +97,10 @@ def duplicate(l):
     lst = []
     for i in range(len(l)-1):
         lst[i] = 0
+
     for i in range(len(l)-1):
-        lst[l[i]] = lst[l[i] +1]
+        lst[l[i]] = lst[l[i]] +1
+
     for i in range(len(l)-1):
         if lst[l[i]] > 1:
             del(l[i])
@@ -106,7 +108,7 @@ def duplicate(l):
     return l
 
 def testduplicate():
-    
+
     assert duplicate([10, 45, 10]) == [10, 45]
     assert duplicate([23, 78, 45, 23]) == [23, 78, 45]
     assert duplicate([34, 67, 34, 67, 10]) == [34, 67, 10]
